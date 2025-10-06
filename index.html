@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - [Nombre de la Empresa] Autos Nuevos y Seminuevos</title>
+    <meta name="description" content="Descubre autos nuevos y seminuevos de calidad. Financiamiento disponible. Visítanos hoy.">
+    <!-- Enlaza tu CSS aquí -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <a href="index.html">[Nombre Empresa] Autos</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="inventario.html">Inventario</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+                <li><a href="financiamiento.html">Financiamiento</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <!-- Botón para móviles -->
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <!-- Main content: Sección Inicio -->
+    <main class="home">
+        <!-- Hero Section con Slider -->
+        <section class="hero">
+            <div class="slider" id="hero-slider">
+                <!-- Slides: Usa JS para rotar (ej. con setInterval) -->
+                <div class="slide active">
+                    <img src="images/auto1.jpg" alt="Auto destacado 1: Toyota Camry 2025" loading="lazy">
+                    <div class="hero-overlay">
+                        <h1>Descubre Nuestros Autos Nuevos</h1>
+                        <p>Modelos 2025 con garantía total. ¡Elige el tuyo hoy!</p>
+                        <a href="inventario.html" class="cta-btn">Ver Inventario</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/auto2.jpg" alt="Seminuevo destacado: Honda Civic 2023" loading="lazy">
+                    <div class="hero-overlay">
+                        <h1>Seminuevos Certificados</h1>
+                        <p>Ahorra hasta 40% con calidad inspeccionada.</p>
+                        <a href="inventario.html#seminuevos" class="cta-btn">Explorar Seminuevos</a>
+                    </div>
+                </div>
+                <!-- Agrega más slides aquí -->
+            </div>
+            <!-- Controles del slider (opcional, con JS) -->
+            <button class="slider-prev">‹</button>
+            <button class="slider-next">›</button>
+        </section>
+
+        <!-- Buscador de Vehículos -->
+        <section class="search-section">
+            <div class="container">
+                <h2>Encuentra Tu Auto Ideal</h2>
+                <form class="search-bar" id="vehicle-search">
+                    <select name="tipo" id="tipo">
+                        <option value="">Tipo de Auto</option>
+                        <option value="nuevo">Nuevos</option>
+                        <option value="seminuevo">Seminuevos</option>
+                    </select>
+                    <select name="marca" id="marca">
+                        <option value="">Marca</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="ford">Ford</option>
+                        <!-- Agrega más con JS dinámico -->
+                    </select>
+                    <input type="number" name="precio-min" placeholder="Precio Mínimo ($)" min="0">
+                    <input type="number" name="precio-max" placeholder="Precio Máximo ($)" min="0">
+                    <button type="submit" class="search-btn">Buscar</button>
+                </form>
+                <!-- Resultados se cargan con JS aquí -->
+                <div id="search-results"></div>
+            </div>
+        </section>
+
+        <!-- Autos Destacados -->
+        <section class="featured-cars">
+            <div class="container">
+                <h2>Autos Destacados</h2>
+                <div class="cars-grid" id="featured-grid">
+                    <!-- Cards dinámicas con JS -->
+                    <article class="car-card">
+                        <img src="images/auto-destacado1.jpg" alt="Toyota Corolla 2025" loading="lazy">
+                        <h3>Toyota Corolla 2025</h3>
+                        <p class="price">$25,000</p>
+                        <p>Nuevo | Automático | 0 km</p>
+                        <button class="info-btn">Solicitar Info</button>
+                    </article>
+                    <article class="car-card">
+                        <img src="images/auto-destacado2.jpg" alt="Honda Accord 2023" loading="lazy">
+                        <h3>Honda Accord 2023</h3>
+                        <p class="price">$18,500</p>
+                        <p>Seminuevo | 15,000 km</p>
+                        <button class="info-btn">Solicitar Info</button>
+                    </article>
+                    <!-- Agrega más cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios Rápidos -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial">
+                        <p>"Excelente servicio y precios justos. ¡Recomendado!"</p>
+                        <cite>- Juan Pérez</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Mi seminuevo vino impecable. Financiamiento fácil."</p>
+                        <cite>- María López</cite>
+                    </blockquote>
+                    <!-- Agrega más -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer básico -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 [Nombre Empresa]. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="[url-facebook]">Facebook</a></li>
+                <li><a href="[url-instagram]">Instagram</a></li>
+                <li><a href="[url-tiktok]">TikTok</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Enlaza tu JS aquí -->
+    <script src="script.js"></script>
+</body>
+</html>
