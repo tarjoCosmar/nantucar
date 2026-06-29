@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NANTUCAR Autos Nuevos y Seminuevos</title>
+    <meta name="description" content="Contáctanos para consultas sobre autos nuevos, seminuevos, financiamiento u ofertas. Teléfono, email, formulario y ubicación.">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-nantucar.png" alt="NANTUCAR" class="logo-img"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="financiamiento.html">Financiamiento</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contacto-page">
+        <section class="hero-contacto" style="background:linear-gradient(rgba(0,0,0,0.75),rgba(200,0,0,0.3)),url('https://images.unsplash.com/photo-1486496572940-2bb2341fdbdf?auto=format&fit=crop&w=2070&q=80');background-size:cover;background-position:center;color:#fff;text-align:center;padding:6rem 0;">
+            <div class="container">
+                <h1>Contáctanos</h1>
+                <p>¿Tienes preguntas sobre un auto, financiamiento o servicio? Nuestro equipo responde en menos de 24 horas.</p>
+                <div style="margin-top:1.5rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+                    <a href="#formulario" class="btn">Enviar Mensaje</a>
+                    <a href="tel:+593980375036" class="btn btn-whatsapp">Llamar Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Cómo Ponerte en Contacto</h2>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p><a href="tel:+593980375036" style="color:inherit;">+593 980 375 036</a></p>
+                                <p style="color:#666;font-size:.9rem;">Lunes a Viernes: 8:00 – 16:00<br>Sábados: 8:00 – 14:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@nantucar.com" style="color:inherit;">info@nantucar.com</a></p>
+                                <p style="color:#666;font-size:.9rem;">Respuestas en 24 horas.</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Concesionario Principal</h4>
+                                <p>Av. 29 de Mayo y calle Turupamba</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Sucursal 1</h4>
+                                <p>Av. 29 de Mayo y Kiruba</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Sucursal 2</h4>
+                                <p>Calle 24 de Mayo y Pastaza</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <h4>Redes Sociales</h4>
+                                <div style="display:flex;gap:.8rem;margin-top:.5rem;">
+                                    <a href="#" style="color:#333;font-size:1.4rem;"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" style="color:#333;font-size:1.4rem;"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" style="color:#333;font-size:1.4rem;"><i class="fab fa-tiktok"></i></a>
+                                    <a href="https://wa.me/593980375036" style="color:#25D366;font-size:1.4rem;"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form" id="formulario">
+                        <form class="contacto-form" id="contact-form">
+                            <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                            <input type="tel" name="telefono" placeholder="Teléfono" required>
+                            <select name="tema" required>
+                                <option value="">Selecciona un tema</option>
+                                <option value="compra">Consulta de compra</option>
+                                <option value="financiamiento">Financiamiento</option>
+                                <option value="servicio">Servicio técnico</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                            <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                            <p id="mensaje-enviado" style="display:none;color:green;margin-top:1rem;font-weight:600;">¡Mensaje enviado con éxito! Te contactaremos pronto.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background:#000;color:#fff;padding:2rem 0;text-align:center;">
+        <div class="container">
+            <p>&copy; 2025 NANTUCAR. Todos los derechos reservados.</p>
+            <div style="margin-top:1rem;">
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/593980375036" style="color:#25D366;margin:0 0.5rem;"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/593980375036?text=Hola%20Nantucar" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

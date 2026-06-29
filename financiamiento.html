@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamiento - NANTUCAR Autos Nuevos en Ecuador</title>
+    <meta name="description" content="Opciones de financiamiento flexibles para autos nuevos JAC, KARRY, SANY, JETOUR y RELLY. Calcula tu pago mensual y obtén pre-aprobación.">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-nantucar.png" alt="NANTUCAR" class="logo-img"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="financiamiento.html">Financiamiento</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="financiamiento-page">
+        <section class="hero-financiamiento" style="background:linear-gradient(rgba(0,0,0,0.75),rgba(200,0,0,0.3)),url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2070&q=80');background-size:cover;background-position:center;color:#fff;text-align:center;padding:6rem 0;">
+            <div class="container">
+                <h1>Financiamiento Fácil y Accesible</h1>
+                <p>Elige entre préstamos, leasing o planes personalizados. Calcula tu cuota mensual y obtén pre-aprobación en minutos.</p>
+                <div style="margin-top:1.5rem;">
+                    <h2 style="font-size:1.5rem;margin-bottom:1rem;">Tasas desde 4.9% anual</h2>
+                    <a href="#calculadora" class="btn">Calcular Ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculadora-section" id="calculadora">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Calculadora de Financiamiento</h2>
+                    <p>Simula tu pago mensual con los datos de tu interés.</p>
+                </div>
+
+                <form class="calculadora" id="loan-calculator" style="max-width:600px;margin:0 auto;display:grid;gap:1rem;">
+                    <label for="precio-auto">Precio del Auto ($):</label>
+                    <input type="number" id="precio-auto" min="0" value="25000" required style="padding:10px;border:1px solid #ddd;border-radius:4px;">
+
+                    <label for="enganche">Enganche (%):</label>
+                    <input type="number" id="enganche" min="0" max="50" value="10" required style="padding:10px;border:1px solid #ddd;border-radius:4px;">
+
+                    <label for="tasa-interes">Tasa de Interés Anual (%):</label>
+                    <input type="number" id="tasa-interes" step="0.1" min="0" value="4.9" required style="padding:10px;border:1px solid #ddd;border-radius:4px;">
+
+                    <label for="plazo-meses">Plazo (meses):</label>
+                    <select id="plazo-meses" required style="padding:10px;border:1px solid #ddd;border-radius:4px;">
+                        <option value="12">12 meses</option>
+                        <option value="24">24 meses</option>
+                        <option value="36">36 meses</option>
+                        <option value="48">48 meses</option>
+                        <option value="60" selected>60 meses</option>
+                        <option value="72">72 meses</option>
+                    </select>
+
+                    <button type="submit" class="btn">Calcular</button>
+                </form>
+
+                <div id="resultado" class="resultado" style="max-width:600px;margin:2rem auto;padding:2rem;background:#fff;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.1);text-align:center;">
+                    <h3>Tu Pago Mensual Estimado</h3>
+                    <p class="pago-mensual" style="font-size:2.5rem;font-weight:700;color:#CC0000;margin:1rem 0;">$0.00</p>
+                    <p class="detalles" style="color:#666;">Enganche: $0 | Total a Financiar: $0 | Intereses Totales: $0</p>
+                    <button class="btn" style="margin-top:1rem;" onclick="preAprobar()">Solicitar Pre-Aprobación</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="opciones-section" style="background:#f5f5f5;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nuestras Opciones de Financiamiento</h2>
+                    <p>Encuentra el plan que mejor se adapte a tu situación.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                        <h3>Préstamo Directo</h3>
+                        <p>Financiamos directamente sin intermediarios. Tasas competitivas y proceso rápido.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-university"></i></div>
+                        <h3>Convenio Bancario</h3>
+                        <p>Trabajamos con los principales bancos para ofrecerte las mejores condiciones.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-car"></i></div>
+                        <h3>Leasing</h3>
+                        <p>Usa el vehículo pagando una cuota mensual y decide al final si comprar o devolver.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+                        <h3>Trade-In</h3>
+                        <p>Entrega tu auto actual como parte de pago y reduce el monto a financiar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background:#000;color:#fff;padding:2rem 0;text-align:center;">
+        <div class="container">
+            <p>&copy; 2025 NANTUCAR. Todos los derechos reservados.</p>
+            <div style="margin-top:1rem;">
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/593980375036" style="color:#25D366;margin:0 0.5rem;"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/593980375036?text=Hola%20Nantucar" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

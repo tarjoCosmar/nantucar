@@ -1,145 +1,318 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - [Nombre de la Empresa] Autos Nuevos y Seminuevos</title>
-    <meta name="description" content="Descubre autos nuevos y seminuevos de calidad. Financiamiento disponible. Visítanos hoy.">
-    <!-- Enlaza tu CSS aquí -->
-    <link rel="stylesheet" href="estilos.css">
+    <title>NANTUCAR — Autos Nuevos en Ecuador | JAC · KARRY · SANY · JETOUR · RELLY</title>
+    <meta name="description" content="NANTUCAR — 38 vehículos nuevos en Ecuador. Concesionario oficial de JAC, KARRY, SANY, JETOUR y RELLY. Financiamiento disponible.">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header con navegación -->
-    <header class="header">
-        <nav class="nav">
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
             <div class="logo">
-                <a href="index.html">[Nombre Empresa] Autos</a>
+                <a href="index.html"><img src="img/logo-nantucar.png" alt="NANTUCAR" class="logo-img"></a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="inventario.html">Inventario</a></li>
-                <li><a href="ofertas.html">Ofertas</a></li>
-                <li><a href="financiamiento.html">Financiamiento</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <!-- Botón para móviles -->
-            <button class="menu-toggle">☰</button>
-        </nav>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="financiamiento.html">Financiamiento</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle">&#9776;</button>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main content: Sección Inicio -->
-    <main class="home">
-        <!-- Hero Section con Slider -->
-        <section class="hero">
-            <div class="slider" id="hero-slider">
-                <!-- Slides: Usa JS para rotar (ej. con setInterval) -->
-                <div class="slide active">
-                    <img src="images/auto1.jpg" alt="Auto destacado 1: Toyota Camry 2025" loading="lazy">
-                    <div class="hero-overlay">
-                        <h1>Descubre Nuestros Autos Nuevos</h1>
-                        <p>Modelos 2025 con garantía total. ¡Elige el tuyo hoy!</p>
-                        <a href="inventario.html" class="cta-btn">Ver Inventario</a>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="images/auto2.jpg" alt="Seminuevo destacado: Honda Civic 2023" loading="lazy">
-                    <div class="hero-overlay">
-                        <h1>Seminuevos Certificados</h1>
-                        <p>Ahorra hasta 40% con calidad inspeccionada.</p>
-                        <a href="inventario.html#seminuevos" class="cta-btn">Explorar Seminuevos</a>
-                    </div>
-                </div>
-                <!-- Agrega más slides aquí -->
-            </div>
-            <!-- Controles del slider (opcional, con JS) -->
-            <button class="slider-prev">‹</button>
-            <button class="slider-next">›</button>
-        </section>
-
-        <!-- Buscador de Vehículos -->
-        <section class="search-section">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
             <div class="container">
-                <h2>Encuentra Tu Auto Ideal</h2>
-                <form class="search-bar" id="vehicle-search">
-                    <select name="tipo" id="tipo">
-                        <option value="">Tipo de Auto</option>
-                        <option value="nuevo">Nuevos</option>
-                        <option value="seminuevo">Seminuevos</option>
-                    </select>
-                    <select name="marca" id="marca">
-                        <option value="">Marca</option>
-                        <option value="toyota">Toyota</option>
-                        <option value="honda">Honda</option>
-                        <option value="ford">Ford</option>
-                        <!-- Agrega más con JS dinámico -->
-                    </select>
-                    <input type="number" name="precio-min" placeholder="Precio Mínimo ($)" min="0">
-                    <input type="number" name="precio-max" placeholder="Precio Máximo ($)" min="0">
-                    <button type="submit" class="search-btn">Buscar</button>
-                </form>
-                <!-- Resultados se cargan con JS aquí -->
-                <div id="search-results"></div>
-            </div>
-        </section>
-
-        <!-- Autos Destacados -->
-        <section class="featured-cars">
-            <div class="container">
-                <h2>Autos Destacados</h2>
-                <div class="cars-grid" id="featured-grid">
-                    <!-- Cards dinámicas con JS -->
-                    <article class="car-card">
-                        <img src="images/auto-destacado1.jpg" alt="Toyota Corolla 2025" loading="lazy">
-                        <h3>Toyota Corolla 2025</h3>
-                        <p class="price">$25,000</p>
-                        <p>Nuevo | Automático | 0 km</p>
-                        <button class="info-btn">Solicitar Info</button>
-                    </article>
-                    <article class="car-card">
-                        <img src="images/auto-destacado2.jpg" alt="Honda Accord 2023" loading="lazy">
-                        <h3>Honda Accord 2023</h3>
-                        <p class="price">$18,500</p>
-                        <p>Seminuevo | 15,000 km</p>
-                        <button class="info-btn">Solicitar Info</button>
-                    </article>
-                    <!-- Agrega más cards -->
+                <span class="hero-badge">Ecuador &middot; Desde 2022</span>
+                <h1>Tu próximo auto<br>te está esperando</h1>
+                <p>Concesionario oficial de JAC, KARRY, SANY, JETOUR y RELLY. 38 vehículos disponibles con financiamiento.</p>
+                <div class="hero-actions">
+                    <a href="inventario.html" class="btn btn-hero-primary">Ver Inventario</a>
+                    <a href="https://wa.me/593980375036?text=Hola%20Nantucar%2C%20me%20gustar%C3%ADa%20conocer%20sus%20veh%C3%ADculos%20disponibles."
+                       class="btn btn-hero-outline" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar ahora
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Testimonios Rápidos -->
-        <section class="testimonials">
-            <div class="container">
-                <h2>Lo Que Dicen Nuestros Clientes</h2>
-                <div class="testimonials-grid">
-                    <blockquote class="testimonial">
-                        <p>"Excelente servicio y precios justos. ¡Recomendado!"</p>
-                        <cite>- Juan Pérez</cite>
-                    </blockquote>
-                    <blockquote class="testimonial">
-                        <p>"Mi seminuevo vino impecable. Financiamiento fácil."</p>
-                        <cite>- María López</cite>
-                    </blockquote>
-                    <!-- Agrega más -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer básico -->
-    <footer class="footer">
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
         <div class="container">
-            <p>&copy; 2025 [Nombre Empresa]. Todos los derechos reservados.</p>
-            <ul class="social-links">
-                <li><a href="[url-facebook]">Facebook</a></li>
-                <li><a href="[url-instagram]">Instagram</a></li>
-                <li><a href="[url-tiktok]">TikTok</a></li>
-            </ul>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <span class="trust-number">37</span>
+                    <span class="trust-label">Vehículos en patio</span>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <span class="trust-number">5</span>
+                    <span class="trust-label">Marcas disponibles</span>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <span class="trust-number">2022</span>
+                    <span class="trust-label">Fundada en Ecuador</span>
+                </div>
+                <div class="trust-divider"></div>
+                <div class="trust-item">
+                    <span class="trust-number">100<span class="trust-plus">%</span></span>
+                    <span class="trust-label">Vehículos verificados</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VEHÍCULOS DESTACADOS -->
+    <section class="featured-section" id="destacados">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>Vehículos Destacados</h2>
+                    <p>Una selección de lo mejor disponible hoy en nuestros patios</p>
+                </div>
+                <a href="inventario.html" class="btn-link">Ver inventario completo <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="car-grid">
+                <!-- JETOUR X70 MTI -->
+                <div class="car-card" data-type="new" data-brand="jetour" data-year="2024">
+                    <div class="car-badge new">Nuevo</div>
+                    <div class="car-image">
+                        <img src="img/autos/JETOUR%20X70%20MTI/JETOUR_X70MTI-FRENTE.jpeg"
+                             alt="JETOUR X70 MT1" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-meta">
+                            <span class="car-brand-tag">JETOUR</span>
+                            <span class="car-year-tag">SUV</span>
+                        </div>
+                        <h3>X70 MT1</h3>
+                        <div class="car-price">Consultar precio</div>
+                        <div class="car-features">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-cogs"></i> Automático</span>
+                            <span><i class="fas fa-road"></i> 0 km</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-details" data-car="1">Ver Detalles</button>
+                            <a href="#" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JAC HFC 1040 -->
+                <div class="car-card" data-type="new" data-brand="jac" data-year="2024">
+                    <div class="car-badge new">Nuevo</div>
+                    <div class="car-image">
+                        <img src="img/autos/CAMION%20JAC%201040/CAMION_JAC-1040-FRENTE.jpeg"
+                             alt="JAC HFC 1040" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-meta">
+                            <span class="car-brand-tag">JAC</span>
+                            <span class="car-year-tag">Camión</span>
+                        </div>
+                        <h3>HFC 1040</h3>
+                        <div class="car-price">Consultar precio</div>
+                        <div class="car-features">
+                            <span><i class="fas fa-gas-pump"></i> Diésel</span>
+                            <span><i class="fas fa-cogs"></i> Manual</span>
+                            <span><i class="fas fa-road"></i> 0 km</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-details" data-car="2">Ver Detalles</button>
+                            <a href="#" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JETOUR X50 Manual -->
+                <div class="car-card" data-type="new" data-brand="jetour" data-year="2024">
+                    <div class="car-badge new">Nuevo</div>
+                    <div class="car-image">
+                        <img src="img/autos/JETOUR%20X50%20MANUAL/JETOUR_X50_MANUAL-FRENTE.jpg"
+                             alt="JETOUR X50 Manual" loading="lazy">
+                    </div>
+                    <div class="car-info">
+                        <div class="car-meta">
+                            <span class="car-brand-tag">JETOUR</span>
+                            <span class="car-year-tag">SUV</span>
+                        </div>
+                        <h3>X50 Manual</h3>
+                        <div class="car-price">Consultar precio</div>
+                        <div class="car-features">
+                            <span><i class="fas fa-gas-pump"></i> Gasolina</span>
+                            <span><i class="fas fa-cogs"></i> Manual</span>
+                            <span><i class="fas fa-road"></i> 0 km</span>
+                        </div>
+                        <div class="car-actions">
+                            <button class="btn btn-details" data-car="3">Ver Detalles</button>
+                            <a href="#" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-cta">
+                <a href="inventario.html" class="btn btn-primary">Ver los 38 vehículos disponibles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUÉ NANTUCAR -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-title centered">
+                <h2>¿Por qué elegir NANTUCAR?</h2>
+                <p>No somos una plantilla de concesionaria. Somos tu mejor opción en Ecuador.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h3>Vehículos Inspeccionados</h3>
+                    <p>Cada auto en nuestro patio pasa por una revisión técnica completa antes de estar disponible.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Financiamiento a tu Medida</h3>
+                    <p>Trabajamos con entidades financieras para conseguirte la cuota que se adapta a tu realidad.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Atención Real y Directa</h3>
+                    <p>Sin bots ni intermediarios. Hablas con un asesor que conoce cada vehículo personalmente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+        <div class="container cta-content">
+            <div class="cta-text">
+                <h2>¿Listo para manejar tu próximo auto?</h2>
+                <p>Un asesor te responde ahora mismo por WhatsApp.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="https://wa.me/593980375036?text=Hola%20Nantucar%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20veh%C3%ADculos."
+                   class="btn btn-cta-whatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                </a>
+                <a href="inventario.html" class="btn btn-cta-outline">Ver Inventario</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col footer-brand">
+                    <img src="img/logo-nantucar.png" alt="NANTUCAR" class="footer-logo">
+                    <p>Tu concesionaria de confianza en Ecuador. Autos nuevos y seminuevos con garantía y financiamiento desde 2022.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/593980375036" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="inventario.html">Inventario</a></li>
+                        <li><a href="ofertas.html">Ofertas</a></li>
+                        <li><a href="financiamiento.html">Financiamiento</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="noticias.html">Noticias</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Marcas</h4>
+                    <ul>
+                        <li><a href="inventario.html">JAC</a></li>
+                        <li><a href="inventario.html">KARRY</a></li>
+                        <li><a href="inventario.html">SANY</a></li>
+                        <li><a href="inventario.html">JETOUR</a></li>
+                        <li><a href="inventario.html">RELLY</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fab fa-whatsapp"></i><a href="tel:+593980375036">+593 980 375 036</a></p>
+                        <p><i class="fas fa-envelope"></i><a href="mailto:info@nantucar.com">info@nantucar.com</a></p>
+                        <p><i class="fas fa-clock"></i>Lun–Vie 8:00–16:00<br><span class="footer-hours-indent">Sáb 8:00–14:00</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 NANTUCAR. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- Enlaza tu JS aquí -->
-    <script src="script.js"></script>
+    <!-- WhatsApp flotante -->
+    <a href="https://wa.me/593980375036?text=Hola%20Nantucar" class="whatsapp-float" target="_blank"
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal de detalles -->
+    <div class="modal" id="carModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Detalles del Vehículo</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="car-detail-image">
+                    <img id="modalImage" src="" alt="Auto">
+                </div>
+                <div class="modal-gallery" id="modalGallery" style="display:none;gap:.5rem;margin-top:.5rem;margin-bottom:1rem;flex-wrap:wrap;justify-content:center;"></div>
+                <div class="car-detail-info">
+                    <div class="car-detail-specs">
+                        <h4>Especificaciones</h4>
+                        <div class="specs-list" id="specsList"></div>
+                    </div>
+                    <div class="car-detail-features">
+                        <h4>Características</h4>
+                        <div class="features-list" id="featuresList"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-whatsapp" id="modalWhatsapp" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                </a>
+                <a href="#" class="btn btn-pdf" id="modalPDF" download style="display:none">
+                    <i class="fas fa-file-pdf"></i> Descargar Ficha Técnica
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

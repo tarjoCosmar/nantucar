@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - NANTUCAR Concesionario Oficial en Ecuador</title>
+    <meta name="description" content="Mantente al día con las últimas noticias del mundo automotriz: reseñas, consejos de compra y tendencias en NANTUCAR.">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-nantucar.png" alt="NANTUCAR" class="logo-img"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="financiamiento.html">Financiamiento</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="noticias-page">
+        <section class="hero-noticias" style="background:linear-gradient(rgba(0,0,0,0.75),rgba(200,0,0,0.3)),url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=2070&q=80');background-size:cover;background-position:center;color:#fff;text-align:center;padding:6rem 0;">
+            <div class="container">
+                <h1>Noticias y Consejos Automotrices</h1>
+                <p>Descubre las últimas tendencias, reseñas de vehículos y tips para tu próxima compra.</p>
+                <div style="margin-top:1.5rem;">
+                    <h2 style="font-size:1.5rem;margin-bottom:1rem;">Lo Último: Tendencias en Autos Eléctricos 2025</h2>
+                    <a href="#articulos" class="btn">Leer Todas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="filtros-noticias" id="articulos">
+            <div class="container" style="padding-top:3rem;">
+                <form class="search-noticias" id="news-search" style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem;">
+                    <input type="text" name="busqueda" placeholder="Buscar por palabra clave..." style="flex:1;min-width:200px;padding:10px;border:1px solid #ddd;border-radius:4px;">
+                    <select name="categoria" style="padding:10px;border:1px solid #ddd;border-radius:4px;">
+                        <option value="">Todas las categorías</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="consejos">Consejos</option>
+                        <option value="mercado">Mercado</option>
+                    </select>
+                    <button type="submit" class="btn">Buscar</button>
+                </form>
+
+                <div class="car-grid" id="news-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background:#000;color:#fff;padding:2rem 0;text-align:center;">
+        <div class="container">
+            <p>&copy; 2025 NANTUCAR. Todos los derechos reservados.</p>
+            <div style="margin-top:1rem;">
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/593980375036" style="color:#25D366;margin:0 0.5rem;"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/593980375036?text=Hola%20Nantucar" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

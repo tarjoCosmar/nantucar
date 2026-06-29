@@ -1,0 +1,71 @@
+================================================================
+        INVENTARIO NANTUCAR — Lista de Vehículos
+        Concesionario oficial JAC · KARRY · SANY · JETOUR · RELLY
+================================================================
+
+Total de vehículos: 38
+Actualizado: mayo 2026
+
+----------------------------------------------------------------
+CAMIONES JAC (18 unidades)
+----------------------------------------------------------------
+ 1. JAC HFC 1030               — Camión 2.5 Toneladas
+ 2. JAC HFC Doble Cabina 2 Ton — Camión 2 Ton, Doble Cabina
+ 3. JAC HFC 1040               — Camión 3.5 Toneladas
+ 4. JAC HFC 1060               — Camión 5.5 Toneladas
+ 5. JAC HFC 1063 KN            — Camión 6 Toneladas
+ 6. JAC HFC 1120               — Camión 8 Toneladas
+ 7. JAC HFC 1040               — Camión 11 Toneladas
+ 8. JAC HFC 1060               — Camión 13 Toneladas
+ 9. JAC HFC 1180 320 HP        — Camión 13 Ton, 320 HP
+10. JAC HFC 1220               — Camión 18 Toneladas
+11. JAC HFC 1252               — Camión 18.5 Toneladas
+12. JAC HFC 4181               — Tractocamión 28 Toneladas
+13. JAC HFC 4250               — Tractocamión 42 Toneladas
+14. JAC HFC 4254               — Tractocamión 48 Toneladas
+15. JAC Q7                     — Tractocamión 48 Toneladas
+16. JAC K7                     — Tractocamión 48 Toneladas
+17. JAC HFC 5251 Mixer         — Camión Hormigonera / Mixer
+18. JAC HFC 4254 Volqueta      — Volqueta 48 Toneladas
+
+----------------------------------------------------------------
+CAMIONETAS (6 unidades)
+----------------------------------------------------------------
+19. JAC T6 Gasolina            — Camioneta 4x4, Gasolina
+20. JAC T6 Diésel              — Camioneta 4x4, Diésel
+21. JAC T8                     — Camioneta, Gasolina
+22. JAC T8 Pro                 — Camioneta Premium, Gasolina
+23. JAC T9                     — Camioneta Full Size, Gasolina
+24. JAC E JS1 Eléctrico        — Auto 100% Eléctrico
+
+----------------------------------------------------------------
+JETOUR (8 unidades)
+----------------------------------------------------------------
+25. JETOUR X50                 — SUV Compacto
+26. JETOUR X70 Sport           — SUV, Versión Sport
+27. JETOUR X70 Plus            — SUV, Versión Plus
+28. JETOUR Dashing             — SUV Deportivo
+29. JETOUR T1                  — SUV
+30. JETOUR Traveller T2        — MPV / SUV
+31. JETOUR T2 Híbrido          — SUV Híbrido
+38. JETOUR X70 MT1             — SUV
+
+----------------------------------------------------------------
+BUSETAS JAC (4 unidades)
+----------------------------------------------------------------
+32. JAC M4                     — Buseta 11 Pasajeros
+33. JAC Sunray HFC 6491        — Minibús
+34. JAC Sunray 16+1            — Buseta 16+1 Pasajeros
+35. JAC Coaster                — Bus Mediano 20+1 Pasajeros
+
+----------------------------------------------------------------
+KARRY (2 unidades)
+----------------------------------------------------------------
+36. KARRY Mini Van             — Mini Van 11 Pasajeros
+37. KARRY Pick Up CS/CD        — Camioneta Cabina Simple y Doble
+
+================================================================
+Todos los precios: Consultar con asesor
+WhatsApp: +593 980 375 036
+Horario: Lun–Vie 8:00–16:00 / Sáb 8:00–14:00
+================================================================
