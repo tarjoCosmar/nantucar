@@ -187,8 +187,10 @@ function renderResultados(data, gridId) {
     grid.innerHTML = data.length ? data.map(auto => `
         <article class="car-card">
             <div class="car-badge new">${auto.categoria}</div>
-            <img src="${auto.img}" alt="${auto.titulo}" loading="lazy"
-                 onerror="this.src='https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'">
+            <div class="car-image">
+                <img src="${auto.img}" alt="${auto.titulo}" loading="lazy"
+                     onerror="this.src='https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'">
+            </div>
             <div class="car-info">
                 <div class="car-meta">
                     <span class="car-brand-tag">${auto.marca.toUpperCase()}</span>
