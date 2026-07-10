@@ -200,7 +200,7 @@ function renderResultados(data, gridId) {
                     ${auto.specs.map(s => `<li>• ${s}</li>`).join('')}
                 </ul>
                 <div class="car-actions" style="display:flex;gap:.5rem;margin-top:1rem;">
-                    <button class="btn" style="flex:1;background:#111;color:#fff;" onclick="abrirDetalles(${auto.id})">Ver Detalles</button>
+                    <a class="btn" style="flex:1;background:#111;color:#fff;justify-content:center;" href="detalle.html?id=${auto.id}">Ver Detalles</a>
                     <button class="btn btn-primary" style="flex:1;" onclick="solicitarInfo('${auto.titulo.replace(/'/g, "\\'")}')">Solicitar Info</button>
                 </div>
             </div>

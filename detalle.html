@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Vehículo — NANTUCAR</title>
+    <meta id="page-desc" name="description" content="Ficha técnica del vehículo — NANTUCAR">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo-nantucar.png" alt="NANTUCAR" class="logo-img"></a>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inventario.html" class="active">Inventario</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="financiamiento.html">Financiamiento</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <nav class="det-breadcrumb">
+                <a href="index.html">Inicio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="inventario.html">Inventario</a>
+                <i class="fas fa-chevron-right"></i>
+                <span id="bc-titulo">Vehículo</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Detalle principal -->
+    <main class="detalle-page">
+        <div class="container">
+            <div class="det-grid">
+
+                <!-- Galería -->
+                <div class="det-gallery">
+                    <div class="det-gallery-main">
+                        <img id="gallery-main" src="" alt="Vehículo"
+                             onerror="this.src='https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'">
+                    </div>
+                    <div class="det-gallery-thumbs" id="gallery-thumbs"></div>
+                </div>
+
+                <!-- Información -->
+                <div class="det-info">
+                    <div class="det-badges" id="det-badges"></div>
+                    <h1 class="det-titulo" id="det-titulo">Cargando...</h1>
+                    <div class="det-precio" id="det-precio"></div>
+                    <p class="det-desc" id="det-desc"></p>
+
+                    <!-- Especificaciones como tarjetas visuales -->
+                    <h4 class="det-specs-titulo">Especificaciones</h4>
+                    <div class="det-specs" id="det-specs"></div>
+
+                    <!-- Botones de acción -->
+                    <div class="det-ctas">
+                        <a id="cta-wa" class="btn btn-whatsapp" href="#" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Contactar Vendedor
+                        </a>
+                        <a id="cta-pdf" class="btn btn-pdf" href="#" download style="display:none">
+                            <i class="fas fa-file-pdf"></i> Ficha Técnica PDF
+                        </a>
+                        <a href="inventario.html" class="btn det-btn-back">
+                            <i class="fas fa-arrow-left"></i> Volver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Simulador de crédito -->
+    <section class="det-calc-section">
+        <div class="container">
+            <div class="section-title centered">
+                <h2>Simulador de Crédito</h2>
+                <p>Calcula tu cuota mensual aproximada</p>
+            </div>
+            <div class="det-calc-grid">
+                <form id="det-calc-form" class="det-calc-form">
+                    <div class="calc-row">
+                        <label for="c-precio">Precio del vehículo ($)</label>
+                        <input type="number" id="c-precio" value="25000" min="1000" step="500">
+                    </div>
+                    <div class="calc-row">
+                        <label for="c-entrada">Entrada (%)</label>
+                        <input type="number" id="c-entrada" value="20" min="0" max="80">
+                    </div>
+                    <div class="calc-row">
+                        <label for="c-tasa">Tasa de interés anual (%)</label>
+                        <input type="number" id="c-tasa" value="9.5" step="0.1" min="0">
+                    </div>
+                    <div class="calc-row">
+                        <label for="c-plazo">Plazo</label>
+                        <select id="c-plazo">
+                            <option value="12">12 meses</option>
+                            <option value="24">24 meses</option>
+                            <option value="36">36 meses</option>
+                            <option value="48" selected>48 meses</option>
+                            <option value="60">60 meses</option>
+                            <option value="72">72 meses</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">Calcular Cuota</button>
+                </form>
+
+                <div class="det-calc-result">
+                    <div class="calc-res-inner">
+                        <p class="calc-res-label">Cuota mensual estimada</p>
+                        <p class="calc-res-monto" id="c-cuota">$—</p>
+                        <div class="calc-res-rows">
+                            <div class="calc-res-row">
+                                <span>Entrada</span>
+                                <strong id="c-r-entrada">—</strong>
+                            </div>
+                            <div class="calc-res-row">
+                                <span>A financiar</span>
+                                <strong id="c-r-financiar">—</strong>
+                            </div>
+                            <div class="calc-res-row">
+                                <span>Total intereses</span>
+                                <strong id="c-r-intereses">—</strong>
+                            </div>
+                        </div>
+                        <a id="calc-cta-wa" class="btn btn-whatsapp" href="#" target="_blank"
+                           style="width:100%;justify-content:center;margin-top:1.25rem;">
+                            <i class="fab fa-whatsapp"></i> Solicitar Pre-aprobación
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehículos relacionados -->
+    <section class="det-rel-section" id="det-rel-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-title">
+                    <h2>Vehículos Relacionados</h2>
+                    <p>Otros modelos de la misma categoría</p>
+                </div>
+                <a href="inventario.html" class="btn-link">Ver inventario completo <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="car-grid" id="rel-grid"></div>
+        </div>
+    </section>
+
+    <footer style="background:#000;color:#fff;padding:2rem 0;text-align:center;">
+        <div class="container">
+            <p>&copy; 2025 NANTUCAR. Todos los derechos reservados.</p>
+            <div style="margin-top:1rem;">
+                <a href="https://www.facebook.com/p/NantuCar-100086182512539/?locale=es_LA" target="_blank" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nantucar" target="_blank" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color:#fff;margin:0 0.5rem;"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/593980375036" style="color:#25D366;margin:0 0.5rem;"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/593980375036?text=Hola%20Nantucar" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script>
+    (function () {
+        const $ = id => document.getElementById(id);
+
+        const id = parseInt(new URLSearchParams(window.location.search).get('id'));
+        const auto = (typeof autosNuevos !== 'undefined') && autosNuevos.find(a => a.id === id);
+        if (!auto) { window.location.href = 'inventario.html'; return; }
+
+        // Meta
+        document.title = auto.titulo + ' — NANTUCAR';
+        $('page-title').textContent = auto.titulo + ' — NANTUCAR';
+        $('page-desc').content = auto.descripcion + ' — NANTUCAR Ecuador';
+        $('bc-titulo').textContent = auto.titulo;
+
+        // Badges
+        $('det-badges').innerHTML =
+            '<span class="det-badge-marca">' + auto.marca.toUpperCase() + '</span>' +
+            '<span class="det-badge-cat">' + auto.categoria + '</span>';
+
+        // Título y precio
+        $('det-titulo').textContent = auto.titulo;
+        $('det-precio').innerHTML = auto.precio > 0
+            ? '<span class="det-precio-num">$' + auto.precio.toLocaleString() + '</span>'
+            : '<span class="det-precio-consultar">Consultar precio &nbsp;<i class="fab fa-whatsapp" style="color:#25D366"></i></span>';
+
+        // Descripción
+        $('det-desc').textContent = auto.descripcion;
+
+        // Spec cards
+        var specHtml = auto.specs.map(function(s) {
+            var i = s.indexOf(': ');
+            var label = i > -1 ? s.substring(0, i) : 'Característica';
+            var val   = i > -1 ? s.substring(i + 2) : s;
+            return '<div class="det-spec-card"><span class="det-spec-label">' + label + '</span><span class="det-spec-val">' + val + '</span></div>';
+        });
+        if (!auto.specs.some(function(s){ return /km|kilomet/i.test(s); })) {
+            specHtml.push('<div class="det-spec-card"><span class="det-spec-label">Kilometraje</span><span class="det-spec-val">0 km</span></div>');
+        }
+        if (!auto.specs.some(function(s){ return /estado|condic/i.test(s); })) {
+            specHtml.push('<div class="det-spec-card"><span class="det-spec-label">Estado</span><span class="det-spec-val">Nuevo</span></div>');
+        }
+        $('det-specs').innerHTML = specHtml.join('');
+
+        // Galería
+        var mainEl = $('gallery-main');
+        mainEl.src = auto.img;
+        mainEl.alt = auto.titulo;
+
+        var extras = (typeof galeriaAutos !== 'undefined') ? (galeriaAutos[id] || []) : [];
+        var allFotos = [auto.img].concat(extras).filter(function(v, i, a){ return a.indexOf(v) === i; });
+        var thumbsEl = $('gallery-thumbs');
+
+        if (allFotos.length > 1) {
+            allFotos.forEach(function(src, i) {
+                var img = document.createElement('img');
+                img.src = src;
+                img.alt = auto.titulo + ' ' + (i + 1);
+                img.className = 'det-thumb' + (i === 0 ? ' active' : '');
+                img.loading = 'lazy';
+                img.onerror = function(){ img.remove(); };
+                img.addEventListener('click', function() {
+                    mainEl.src = src;
+                    thumbsEl.querySelectorAll('.det-thumb').forEach(function(t){ t.classList.remove('active'); });
+                    img.classList.add('active');
+                });
+                thumbsEl.appendChild(img);
+            });
+        } else {
+            thumbsEl.style.display = 'none';
+        }
+
+        // CTAs
+        var waMsg = encodeURIComponent('¡Hola NANTUCAR! Estoy interesado en el ' + auto.titulo + '. ¿Pueden darme más información y el precio?');
+        var waUrl = 'https://api.whatsapp.com/send?phone=593980375036&text=' + waMsg;
+        $('cta-wa').href = waUrl;
+        $('calc-cta-wa').href = waUrl;
+
+        var pdf = (typeof fichasPDF !== 'undefined') && fichasPDF[id];
+        if (pdf) {
+            $('cta-pdf').href = (typeof encodePath === 'function') ? encodePath(pdf) : pdf;
+            $('cta-pdf').download = 'Ficha Tecnica ' + auto.titulo + '.pdf';
+            $('cta-pdf').style.display = 'inline-flex';
+        }
+
+        // Simulador de crédito
+        $('det-calc-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var precio    = parseFloat($('c-precio').value)  || 0;
+            var entPorc   = parseFloat($('c-entrada').value) / 100;
+            var tasaAnual = parseFloat($('c-tasa').value)    / 100;
+            var plazo     = parseInt($('c-plazo').value);
+
+            var entrada   = precio * entPorc;
+            var financiar = precio - entrada;
+            var tm        = tasaAnual / 12;
+            var cuota     = tm > 0
+                ? financiar * (tm * Math.pow(1 + tm, plazo)) / (Math.pow(1 + tm, plazo) - 1)
+                : financiar / plazo;
+            var intereses = cuota * plazo - financiar;
+
+            $('c-cuota').textContent       = '$' + cuota.toFixed(2);
+            $('c-r-entrada').textContent   = '$' + entrada.toFixed(2);
+            $('c-r-financiar').textContent = '$' + financiar.toFixed(2);
+            $('c-r-intereses').textContent = '$' + intereses.toFixed(2);
+        });
+
+        // Vehículos relacionados
+        var rel = (typeof autosNuevos !== 'undefined')
+            ? autosNuevos.filter(function(a){ return a.categoria === auto.categoria && a.id !== id; }).slice(0, 4)
+            : [];
+        var relGrid = $('rel-grid');
+        if (rel.length) {
+            relGrid.innerHTML = rel.map(function(a) {
+                var msg = encodeURIComponent('¡Hola NANTUCAR! Me interesa el ' + a.titulo + '.');
+                return '<article class="car-card">' +
+                    '<div class="car-badge new">' + a.categoria + '</div>' +
+                    '<img src="' + a.img + '" alt="' + a.titulo + '" loading="lazy" ' +
+                         'onerror="this.src=\'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80\'">' +
+                    '<div class="car-info">' +
+                        '<div class="car-meta"><span class="car-brand-tag">' + a.marca.toUpperCase() + '</span></div>' +
+                        '<h3>' + a.titulo + '</h3>' +
+                        '<p class="car-price">' + (a.precio > 0 ? '$' + a.precio.toLocaleString() : 'Consultar precio') + '</p>' +
+                        '<div class="car-actions" style="display:flex;gap:.5rem;margin-top:1rem;">' +
+                            '<a class="btn" style="flex:1;background:#111;color:#fff;justify-content:center;" href="detalle.html?id=' + a.id + '">Ver Detalles</a>' +
+                            '<a class="btn btn-primary" style="flex:1;justify-content:center;" href="https://api.whatsapp.com/send?phone=593980375036&text=' + msg + '" target="_blank">Cotizar</a>' +
+                        '</div>' +
+                    '</div>' +
+                '</article>';
+            }).join('');
+        } else {
+            $('det-rel-section').style.display = 'none';
+        }
+
+        // Menú móvil
+        var toggle = document.querySelector('.menu-toggle');
+        var nav    = document.querySelector('.nav-menu');
+        if (toggle && nav) toggle.addEventListener('click', function(){ nav.classList.toggle('active'); });
+    })();
+    </script>
+</body>
+</html>
