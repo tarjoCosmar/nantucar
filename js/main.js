@@ -15,8 +15,8 @@ const autosNuevos = [
     { id: 10, img: 'img/autos/JAC%201220%2012%20TON/WhatsApp%20Image%202026-06-30%20at%2011.23.56%20AM.jpeg', titulo: 'JAC HFC 1220',              precio: 0, descripcion: 'Nuevo | Camión | 12 Toneladas | 0 km',         specs: ['Carga máx: 18 Ton'],                          tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
     { id: 11, img: 'img/autos/JAC%201252%2018.7%20TON/WhatsApp%20Image%202026-06-29%20at%2011.11.39%20AM.jpeg', titulo: 'JAC HFC 1252',              precio: 0, descripcion: 'Nuevo | Camión | 18.7 Toneladas | 0 km',       specs: ['Carga máx: 18.7 Ton'],                        tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
     { id: 12, img: 'img/autos/CABEZAL%204181%2017%20TON/WhatsApp%20Image%202026-06-29%20at%2011.11.51%20AM.jpeg',        titulo: 'JAC HFC 4181',              precio: 0, descripcion: 'Nuevo | Tractocamión | 28 Toneladas | 0 km',   specs: ['Carga máx: 28 Ton', 'Tipo: Tractocamión'],    tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
-    { id: 13, img: 'img/jac-hfc4250.jpg',        titulo: 'JAC HFC 4250',              precio: 0, descripcion: 'Nuevo | Tractocamión | 42 Toneladas | 0 km',   specs: ['Carga máx: 42 Ton', 'Tipo: Tractocamión'],    tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
-    { id: 14, img: 'img/jac-hfc4254.jpg',        titulo: 'JAC HFC 4254',              precio: 0, descripcion: 'Nuevo | Tractocamión | 48 Toneladas | 0 km',   specs: ['Carga máx: 48 Ton', 'Tipo: Tractocamión'],    tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
+    { id: 13, img: 'img/autos/4250/WhatsApp%20Image%202026-07-10%20at%209.33.21%20AM.jpeg', titulo: 'JAC HFC 4250',              precio: 0, descripcion: 'Nuevo | Tractocamión | 42 Toneladas | 0 km',   specs: ['Carga máx: 42 Ton', 'Tipo: Tractocamión'],    tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
+    { id: 14, img: 'img/autos/4254/WhatsApp%20Image%202026-07-10%20at%209.44.34%20AM.jpeg', titulo: 'JAC HFC 4254',              precio: 0, descripcion: 'Nuevo | Tractocamión | 48 Toneladas | 0 km',   specs: ['Carga máx: 48 Ton', 'Tipo: Tractocamión'],    tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
     { id: 15, img: 'img/autos/JAC%20Q7/WhatsApp%20Image%202026-06-30%20at%2010.18.02%20AM.jpeg',             titulo: 'JAC Q7',                    precio: 0, descripcion: 'Nuevo | Tractocamión | 48 Toneladas | 0 km',   specs: ['Carga máx: 48 Ton', 'Tipo: Tractocamión'],    tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
     { id: 16, img: 'img/autos/JAC%20K7/WhatsApp%20Image%202026-06-30%20at%2011.24.22%20AM.jpeg',             titulo: 'JAC K7',                    precio: 0, descripcion: 'Nuevo | Tractocamión | 48 Toneladas | 0 km',   specs: ['Carga máx: 48 Ton', 'Tipo: Tractocamión'],    tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
     { id: 17, img: 'img/autos/JAC%20HFC%205251%20MIXER/WhatsApp%20Image%202026-06-30%20at%2011.24.45%20AM.jpeg',  titulo: 'JAC HFC 5251 Mixer',        precio: 0, descripcion: 'Nuevo | Camión Mixer / Hormigonera | 0 km',    specs: ['Tipo: Hormigonera / Mixer'],                   tipo: 'nuevo', marca: 'jac',    modelo: 'camion',    categoria: 'Camiones JAC' },
@@ -91,7 +91,9 @@ const galeriaAutos = {
     32: ['img/autos/JAC%20M4/WhatsApp%20Image%202026-06-30%20at%2011.25.41%20AM%20%281%29.jpeg','img/autos/JAC%20M4/WhatsApp%20Image%202026-06-30%20at%2011.25.41%20AM%20%282%29.jpeg','img/autos/JAC%20M4/WhatsApp%20Image%202026-06-30%20at%2011.25.41%20AM%20%283%29.jpeg','img/autos/JAC%20M4/WhatsApp%20Image%202026-06-30%20at%2011.25.41%20AM%20%284%29.jpeg'],
     33: ['img/autos/JAC%20SUNRAY%20HFC%206491/WhatsApp%20Image%202026-07-01%20at%2011.00.50%20AM.jpeg','img/autos/JAC%20SUNRAY%20HFC%206491/WhatsApp%20Image%202026-07-01%20at%2011.00.51%20AM.jpeg','img/autos/JAC%20SUNRAY%20HFC%206491/WhatsApp%20Image%202026-07-01%20at%2011.00.51%20AM%20%281%29.jpeg','img/autos/JAC%20SUNRAY%20HFC%206491/WhatsApp%20Image%202026-07-01%20at%2011.00.51%20AM%20%282%29.jpeg','img/autos/JAC%20SUNRAY%20HFC%206491/WhatsApp%20Image%202026-07-01%20at%2011.00.51%20AM%20%283%29.jpeg','img/autos/JAC%20SUNRAY%20HFC%206491/WhatsApp%20Image%202026-07-01%20at%2011.00.51%20AM%20%284%29.jpeg'],
     34: ['img/autos/JAC%20SUNRAY%2016%2B1/WhatsApp%20Image%202026-07-01%20at%2011.01.00%20AM.jpeg','img/autos/JAC%20SUNRAY%2016%2B1/WhatsApp%20Image%202026-07-01%20at%2011.01.00%20AM%20%281%29.jpeg','img/autos/JAC%20SUNRAY%2016%2B1/WhatsApp%20Image%202026-07-01%20at%2011.01.01%20AM.jpeg','img/autos/JAC%20SUNRAY%2016%2B1/WhatsApp%20Image%202026-07-01%20at%2011.01.01%20AM%20%281%29.jpeg','img/autos/JAC%20SUNRAY%2016%2B1/WhatsApp%20Image%202026-07-01%20at%2011.01.01%20AM%20%282%29.jpeg','img/autos/JAC%20SUNRAY%2016%2B1/WhatsApp%20Image%202026-07-01%20at%2011.01.01%20AM%20%283%29.jpeg'],
-    35: ['img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM%20%281%29.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM%20%282%29.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM%20%283%29.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.05%20AM.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.05%20AM%20%281%29.jpeg']
+    35: ['img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM%20%281%29.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM%20%282%29.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.04%20AM%20%283%29.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.05%20AM.jpeg','img/autos/JAC%20COASTER/WhatsApp%20Image%202026-07-01%20at%2011.00.05%20AM%20%281%29.jpeg'],
+    13: ['img/autos/4250/WhatsApp%20Image%202026-07-10%20at%209.33.22%20AM.jpeg','img/autos/4250/WhatsApp%20Image%202026-07-10%20at%209.33.22%20AM%20%281%29.jpeg','img/autos/4250/WhatsApp%20Image%202026-07-10%20at%209.33.22%20AM%20%282%29.jpeg','img/autos/4250/WhatsApp%20Image%202026-07-10%20at%209.33.22%20AM%20%283%29.jpeg','img/autos/4250/WhatsApp%20Image%202026-07-10%20at%209.33.22%20AM%20%284%29.jpeg'],
+    14: ['img/autos/4254/WhatsApp%20Image%202026-07-10%20at%209.44.35%20AM.jpeg','img/autos/4254/WhatsApp%20Image%202026-07-10%20at%209.44.35%20AM%20%281%29.jpeg','img/autos/4254/WhatsApp%20Image%202026-07-10%20at%209.44.35%20AM%20%282%29.jpeg','img/autos/4254/WhatsApp%20Image%202026-07-10%20at%209.44.35%20AM%20%283%29.jpeg']
 };
 
 const fichasPDF = {
@@ -120,7 +122,7 @@ const fichasPDF = {
     23: 'img/fichasPDF/CAMONETAS/JAC_T9.pdf',
     24: 'img/fichasPDF/CAMONETAS/E JS1_AUTO_ELÉCTRICO.pdf',
     25: 'img/fichasPDF/JENTOUR/JETOUR_X50.pdf',
-    26: 'img/fichasPDF/Ficha-X70-Sport-2025.pdf',
+    26: 'img/fichasPDF/ficha-tecnica-x70-sport.pdf',
     27: 'img/fichasPDF/JENTOUR/JETOUR_X70_PLUS.pdf',
     28: 'img/fichasPDF/JENTOUR/JETOUR_DASHING.pdf',
     29: 'img/fichasPDF/JENTOUR/JETOUR_T1.pdf',
@@ -132,7 +134,8 @@ const fichasPDF = {
     36: 'img/fichasPDF/KARRY/KARRY_MINI_VAN_11_PASAJEROS.pdf',
     37: 'img/fichasPDF/KARRY/KARRY_PICK_UP_CS_CD.pdf',
     33: 'img/fichasPDF/2023-07-19-FICHA TÉCNICA SUNRAY_compressed.pdf',
-    40: 'img/fichasPDF/HFC_4250.pdf'
+    40: 'img/fichasPDF/HFC_4250.pdf',
+    38: 'img/fichasPDF/ficha-tecnica-jetour-X70.pdf'
 };
 
 function encodePath(path) {
